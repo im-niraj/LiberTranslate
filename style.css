@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    height: 70px;
+    border-bottom: 1px solid rgb(225, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar h1{
+    margin: 0;
+    padding: 0;
+    color: rgb(123, 103, 240);
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin-top: 100px;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius:11px;
+    height: 250px;
+    width: 80%;
+}
+.selectTag{
+    height: 50px;
+    border-bottom: 1px solid rgb(225, 221, 221);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    /* justify-content: space-between; */
+}
+.one,.two,.three{
+    display: flex;
+    align-items: center;
+    color:#5f6368;
+}
+.one,.three{
+    flex: 1;
+    margin-left: 6px;
+}
+/* .one > div,.three > div{
+    margin-left: 30px;
+} */
+#selectIn,#selectOu{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    
+}
+#selectIn:hover,#selectOu:hover,.two:hover, #engIn:hover, #hindiIn:hover,#engOu:hover, #hindiOu:hover{
+    background-color: rgb(238, 238, 238);
+}
+.two{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.one > #engIn,#hindiIn,#engOu,#hindiOu, #lang{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.three > #engIn,#hindiIn,#engOu,#hindiOu{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.textArea{
+    display: flex;
+
+}
+.inputDiv{
+    flex:1;
+    border-right: 1px solid rgb(225, 221, 221);
+    height: 200px;
+    overflow: hidden;
+}
+.outputDiv{
+    flex: 1; 
+}
+.outputDiv > #textTrans{
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+    color: #3c4146;
+}
+textarea{
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 90%;
+    width: 95%;
+    border: 0;
+    font-size: 25px;
+    color: #3c4146;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea:focus{
+    outline: none;
+}
+.selectedTab{
+    color: rgb(89, 62, 238);
+    border-bottom: 2px solid rgb(89, 62, 238);
+}
+button{
+    margin-top: 20px;
+    background-color: green;
+    color: #fff;
+    padding:10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#selDivOu select{
+    border: 0;
+    font-size: 15px;
+    color:#5f6368;
+}
+
+#selDivIn select{
+    border: 0;
+    font-size: 15px;
+    color:#5f6368;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Translate</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>TRANSLATE</h1>
+            <i class="fa fa-thin fa fa-language"></i>
+            
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="selectTag">
+                    <div class="one">
+                        <div id="lang" value="lang">SELECT LANGUAGE</div>
+                        <div onclick="Btn('enIn')" class="selectedTab" id="engIn">ENGLISH</div>
+                        <div onclick="Btn('hiIn')" id="hindiIn">HINDI</div>
+                        <!-- <div onclick="SelBtn('selIn')" id="selectIn"><i class="fa fa-angle-down" aria-hidden="true"></i></div> -->
+                        <div id="selDivIn">
+                            <select onchange='BtnSel("selIn")' name="selectIn" id="selectIn">
+                                <option value="">OTHER LANG</option>
+                                <option value="en">ENGLISH</option>
+                                <option value="hi">HINDI</option>
+                                <option value="zh">CHINESE</option>
+                                <option value="fr">FRENCH</option>
+                                <option value="ja">JAPANESE</option>
+                                <option value="ar">ARABIC</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div onclick="Btn('InOuSwap')" class="two">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <div class="three">
+                        <div onclick="Btn('hiOu')" class="selectedTab" id="hindiOu">HINDI</div>
+                        <div onclick="Btn('enOu')" id="engOu">ENGLISH</div>
+                        <!-- <div onclick="SelBtn('selOu')" id="selectOu"><i class="fa fa-angle-down" aria-hidden="true"></i></div> -->
+                        <div id="selDivOu">
+                            <select onchange='BtnSel("selOu")' name="selectOu" id="selectOu">
+                                <option value="">OTHER LANG</option>
+                                <option value="en">ENGLISH</option>
+                                <option value="hi">HINDI</option>
+                                <option value="zh">CHINESE</option>
+                                <option value="fr">FRENCH</option>
+                                <option value="ja">JAPANESE</option>
+                                <option value="ar">ARABIC</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="textArea">
+                    
+                    <div class="inputDiv">
+                        <textarea name="textInput" id="textInput"></textarea>
+                    </div>
+                    <div class="outputDiv">
+                        <div id="textTrans">
+                            
+                        </div>
+                    </div>
+                </div>
+                <button onclick="Translate()">Translate</button>
+                
+
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9b49c92c6d.js" crossorigin="anonymous"></script>
+</body>
+</html>
