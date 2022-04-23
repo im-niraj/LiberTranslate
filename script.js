@@ -44,6 +44,8 @@ function Btn(n){
        hindiOu.classList.add('selectedTab');
        hindiIn.classList.remove('selectedTab');
        engOu.classList.remove('selectedTab');
+       selInDiv.classList.remove('selectedTab');
+       selOuDiv.classList.remove('selectedTab');
        sourceInput = 'en';
        targetOutput = 'hi';
     }
@@ -52,6 +54,8 @@ function Btn(n){
         engOu.classList.add('selectedTab');
         hindiOu.classList.remove('selectedTab');
         engIn.classList.remove('selectedTab');
+        selInDiv.classList.remove('selectedTab');
+        selOuDiv.classList.remove('selectedTab');
         sourceInput = 'hi';
         targetOutput = 'en';
      }
